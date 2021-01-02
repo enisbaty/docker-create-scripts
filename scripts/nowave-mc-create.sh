@@ -10,7 +10,7 @@ docker create\
     -e ENABLE_AUTOPAUSE=TRUE\
     -e AUTOPAUSE_TIMEOUT_EST=1800\
     -e MAX_MEMORY=12G\
-    -v /home/sysadmin/docker_config/minecraft/nowave:/data\
+    -v /home/sysadmin/docker-data/minecraft/nowave:/data\
     --log-opt max-size=10m\
     --log-opt max-file=5\
     --restart=unless-stopped\
