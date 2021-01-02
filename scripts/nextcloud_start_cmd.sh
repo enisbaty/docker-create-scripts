@@ -10,5 +10,7 @@ docker create\
   -v /mnt/storage/nextcloud_data:/data\
   -v /mnt/storage/Backups:/backups\
   -v /mnt/storage/Transmission:/transmission\
+  --log-opt max-size=10m\
+  --log-opt max-file=5\
   --restart=unless-stopped\
   linuxserver/nextcloud 

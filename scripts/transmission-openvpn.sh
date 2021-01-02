@@ -30,5 +30,6 @@ docker create\
     --network=le_bridge\
     --log-driver json-file\
     --log-opt max-size=10m\
+    --log-opt max-file=5\
     --restart=unless-stopped\
     haugene/transmission-openvpn
