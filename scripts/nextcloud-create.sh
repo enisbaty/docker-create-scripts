@@ -7,7 +7,7 @@ docker create\
   -e PUID=1001\
   -e PGID=1000\
   -v /home/sysadmin/docker-data/nextcloud:/config\
-  -v /mnt/storage/nextcloud_data:/data\
+  -v /mnt/storage/nextcloud-data:/data\
   -v /mnt/backups:/backups\
   -v /mnt/storage/Transmission:/transmission\
   --log-opt max-size=10m\
