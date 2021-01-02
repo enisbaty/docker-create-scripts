@@ -3,7 +3,7 @@ docker create\
   --hostname=heimdall\
   --network=le_bridge\
   -e PUID=1001\
-  -e PGID=1001\
+  -e PGID=1000\
   -e TZ=Europe/London\
   -p 8888:80\
   -p 3434:443\
