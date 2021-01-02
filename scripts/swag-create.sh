@@ -15,7 +15,7 @@ docker create\
   -e STAGING=false\
   -p 443:443\
   -p 80:80\
-  -v /home/sysadmin/docker_config/swag:/config\
+  -v /home/sysadmin/docker-data/swag:/config\
   --log-opt max-size=10m\
   --log-opt max-file=5\
   --restart=unless-stopped\

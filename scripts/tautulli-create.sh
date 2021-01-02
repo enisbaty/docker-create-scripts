@@ -7,8 +7,8 @@ docker create\
     -e PGID=1000\
     -e TZ=Europe/London\
     -p 8181:8181\
-    -v /home/sysadmin/docker_config/tautulli:/config\
-    -v /home/sysadmin/docker_config/plex/config/Library/Application\ Support/Plex\ Media\ Server/Logs:/logs\
+    -v /home/sysadmin/docker-data/tautulli:/config\
+    -v /home/sysadmin/docker-data/plex/config/Library/Application\ Support/Plex\ Media\ Server/Logs:/logs\
     --log-opt max-size=10m\
     --log-opt max-file=5\
     --restart unless-stopped\

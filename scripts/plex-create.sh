@@ -7,8 +7,8 @@ docker create\
   -e PGID=1000\
   -e TZ=Europe/London\
   -e VERSION=docker\
-  -v /home/sysadmin/docker_config/plex/config:/config\
-  -v /home/sysadmin/docker_config/plex/transcode:/transcode\
+  -v /home/sysadmin/docker-data/plex/config:/config\
+  -v /home/sysadmin/docker-data/plex/transcode:/transcode\
   -v /mnt/storage/Transmission/completed/Anime/TV:/media/tv\
   -v /mnt/storage/Transmission/completed/Anime/Movies:/media/anime_movies\
   -v /mnt/storage/Music/enisb:/media/music\
