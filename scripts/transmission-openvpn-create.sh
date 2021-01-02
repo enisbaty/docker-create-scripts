@@ -14,7 +14,7 @@ docker create\
     -e WEBPROXY_ENABLED=false\
     -e TRANSMISSION_WEB_UI=combustion\
     -e PUID=1001\
-    -e PGID=1001\
+    -e PGID=1000\
     -e TRANSMISSION_SPEED_LIMIT_UP=750\
     -e TRANSMISSION_SPEED_LIMIT_DOWN=3500\
     -e TRANSMISSION_SPEED_LIMIT_UP_ENABLED=true\
@@ -30,5 +30,6 @@ docker create\
     --network=le_bridge\
     --log-driver json-file\
     --log-opt max-size=10m\
+    --log-opt max-file=5\
     --restart=unless-stopped\
     haugene/transmission-openvpn

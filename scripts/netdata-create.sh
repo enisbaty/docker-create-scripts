@@ -9,5 +9,7 @@ docker create\
   -v /var/run/docker.sock:/var/run/docker.sock:ro\
   --cap-add SYS_PTRACE\
   --security-opt apparmor=unconfined\
+  --log-opt max-size=10m\
+  --log-opt max-file=5\
   --restart unless-stopped\
   netdata/netdata

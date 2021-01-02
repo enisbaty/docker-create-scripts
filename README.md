@@ -1,2 +1,2 @@
-# docker-run-scripts
-A repository for docker run style scripts
+# docker-create-scripts
+A repository for docker cli create scripts
