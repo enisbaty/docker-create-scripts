@@ -7,7 +7,7 @@ docker create\
   -e PUID=1001\
   -e PGID=1000\
   -e TZ=Europe/London\
-  -e URL=clouddrive.hopto.org\
+  -e URL=homebox.run\
   -e VALIDATION=http\
   -e EMAIL=enisbaty@gmail.com\
   -e DHLEVEL=2048\
