@@ -25,6 +25,7 @@ docker create\
     -e TRANSMISSION_ALT_SPEED_UP=10000\
     -e TRANSMISSION_ALT_SPEED_DOWN=10000\
     -e TRANSMISSION_DOWNLOAD_QUEUE_ENABLED=false\
+    -e LOCAL_NETWORK=192.168.1.0/24\
     -p 9091:9091\
     --hostname=transmission\
     --network=le_bridge\
