@@ -13,4 +13,4 @@ docker create\
   --log-opt max-size=10m\
   --log-opt max-file=5\
   --restart=unless-stopped\
-  linuxserver/nextcloud 
+  ghcr.io/linuxserver/nextcloud 
