@@ -8,11 +8,7 @@ docker create\
     -p 8096:8096\
     -p 8920:8920\
     -v /home/sysadmin/docker-data/jellyfin:/config\
-    -v /mnt/storage/Transmission/completed/Anime/TV:/data/anime_tv\
-    -v /mnt/storage/Transmission/completed/Anime/Movies:/data/anime_movies\
-    -v /mnt/storage/Transmission/completed/TV\ Shows:/data/tv\
-    -v /mnt/storage/Transmission/completed/Movies:/data/movies\
-    -v /mnt/storage/Music/enisb:/data/music\
+    -v /mnt/storage/media:/data/media\
     --network=le_bridge\
     --log-driver json-file\
     --log-opt max-size=10m\
